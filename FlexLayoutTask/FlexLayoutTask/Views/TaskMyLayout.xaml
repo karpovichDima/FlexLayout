@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModel="clr-namespace:FlexLayoutTask.ViewModel;assembly=FlexLayoutTask"
              xmlns:customControlls="clr-namespace:FlexLayoutTask.CustomControlls;assembly=FlexLayoutTask"
-             x:Class="FlexLayoutTask.Views.TaskMyLayout">
+             x:Class="FlexLayoutTask.Views.TaskMyLayout"
+             x:Name="PageName">
     <ContentPage.BindingContext>
-        <viewModel:TaskViewModelMyLayout x:Key="viewM" />
+        <viewModel:TaskViewModelMyLayout/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <AbsoluteLayout>
@@ -27,7 +28,7 @@
                                     <StackLayout>
                                         <Label Text="{Binding Text}" />
                                         <StackLayout>
-                                            <Button Command="{Binding ViewModelCommand, Source={x:Reference Stack}}"
+                                            <Button Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference PageName}}"
                                                     CommandParameter="{Binding .}" />
                                         </StackLayout>
                                     </StackLayout>
