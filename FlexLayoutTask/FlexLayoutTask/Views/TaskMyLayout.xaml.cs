@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FlexLayoutTask.Views
@@ -16,5 +10,10 @@ namespace FlexLayoutTask.Views
 		{
 			InitializeComponent ();
 		}
+
+	    private void Element_OnChildAdded(object sender, ElementEventArgs e)
+	    {
+	        
+	    }
 	}
 }
