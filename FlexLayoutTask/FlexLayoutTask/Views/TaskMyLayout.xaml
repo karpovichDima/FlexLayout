@@ -2,15 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModel="clr-namespace:FlexLayoutTask.ViewModel;assembly=FlexLayoutTask"
+             xmlns:customControlls="clr-namespace:FlexLayoutTask.CustomControlls;assembly=FlexLayoutTask"
              x:Class="FlexLayoutTask.Views.TaskMyLayout">
     <ContentPage.BindingContext>
-        <viewModel:TaskViewModelMyLayout />
+        <viewModel:TaskViewModelMyLayout x:Key="viewM" />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <AbsoluteLayout>
-            <StackLayout BackgroundColor="Peru"
+            <customControlls:CustomStackLayout x:Name="Stack" 
+                         BackgroundColor="Peru"
                          AbsoluteLayout.LayoutFlags="All"
-                         AbsoluteLayout.LayoutBounds="0,0,1,1">
+                         AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         ViewModelCommand="{Binding DeleteCommand}">
                 <FlexLayout BindableLayout.ItemsSource="{Binding Models}"
                             Direction="Row"
                             Wrap="Wrap"
@@ -23,6 +26,10 @@
                                        BackgroundColor="AliceBlue">
                                     <StackLayout>
                                         <Label Text="{Binding Text}" />
+                                        <StackLayout>
+                                            <Button Command="{Binding ViewModelCommand, Source={x:Reference Stack}}"
+                                                    CommandParameter="{Binding .}" />
+                                        </StackLayout>
                                     </StackLayout>
                                 </Frame>
                             </StackLayout>
@@ -62,10 +69,7 @@
                         </ListView>
                     </AbsoluteLayout>
                 </StackLayout>
-            </StackLayout>
-            
-            
-            
+            </customControlls:CustomStackLayout>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
