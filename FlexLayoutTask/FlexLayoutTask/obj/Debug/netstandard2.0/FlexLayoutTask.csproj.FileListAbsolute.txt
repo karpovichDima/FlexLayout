@@ -1,0 +1,14 @@
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\bin\Debug\netstandard2.0\FlexLayoutTask.deps.json
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\bin\Debug\netstandard2.0\FlexLayoutTask.dll
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\bin\Debug\netstandard2.0\FlexLayoutTask.pdb
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.csprojAssemblyReference.cache
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.csproj.CoreCompileInputs.cache
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.AssemblyInfoInputs.cache
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.AssemblyInfo.cs
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.dll
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\FlexLayoutTask.pdb
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\Views\TaskView.xaml.g.cs
+C:\Users\d.karpovich\Desktop\TaskFlexLayout\FlexLayoutTask\FlexLayoutTask\FlexLayoutTask\obj\Debug\netstandard2.0\Views\TaskMyLayout.xaml.g.cs

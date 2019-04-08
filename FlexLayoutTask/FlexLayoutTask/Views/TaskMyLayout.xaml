@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:FlexLayoutTask.ViewModel;assembly=FlexLayoutTask"
+             x:Class="FlexLayoutTask.Views.TaskMyLayout">
+    <ContentPage.BindingContext>
+        <viewModel:TaskViewModelMyLayout />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Peru">
+            <FlexLayout BindableLayout.ItemsSource="{Binding Models}"
+                        Direction="Row"
+                        Wrap="Wrap"
+                        JustifyContent="SpaceEvenly">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="Peru"
+                                     Padding="0,5,0,0">
+                            <Frame CornerRadius="10"
+                                   BackgroundColor="AliceBlue">
+                                <StackLayout>
+                                    <Label Text="{Binding Text}" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+
+            <StackLayout BackgroundColor="Peru"
+                         Orientation="Horizontal">
+                <Button Text="Add" 
+                        Command="{Binding AddCommand}"/>
+                <Button Text="Delete"
+                        Command="{Binding DeleteCommand}" />
+            </StackLayout>
+                         
+
+            <ListView x:Name="ListViewDogs"
+                      HasUnevenRows="True"
+                      BackgroundColor="White"
+                      ItemsSource="{Binding ListViewModels}"
+                      CachingStrategy="RecycleElement"
+                      SelectionMode="Single">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="dogDataTemplate">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" 
+                                         Padding="20,20,20,20">
+                                <Label Text="{Binding Text}"
+                                    FontSize="Large"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
